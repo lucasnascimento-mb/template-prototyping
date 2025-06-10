@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Extrato</title>
+</head>
+<body>
+    <h1>Extrato de {{index . "name"}}</h1>
+    <h2>Saldo: R$ {{index . "balance"}}</h2>
+    <table border="1">
+        <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+        </tr>
+        {{range index . "items"}}
+        <tr>
+            <td>{{index . "description"}}</td>
+            <td>R$ {{index . "value"}}</td>
+            <td>{{index . "type"}}</td>
+        </tr>
+        {{end}}
+    </table>
+</body>
+</html>

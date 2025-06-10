@@ -1,0 +1,16 @@
+{
+    "name": "Cliente exemplo",
+    "balance": 100,
+    "items": [
+        {
+            "description": "Compra de Bitcoin",
+            "value": 100,
+            "type": "Crédito"
+        },
+        {
+            "description": "Venda de Bitcoin",
+            "value": 50,
+            "type": "Débito"
+        }
+    ]
+}
